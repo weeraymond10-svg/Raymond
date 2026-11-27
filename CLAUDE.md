@@ -5,10 +5,10 @@
 - No frameworks, no build step. Files open directly in a browser.
 
 ## Project Structure
-The repository is nearly empty for now. As it grows, keep things simple:
-- `index.html` at the top level for the main page
-- `css/` for stylesheets
-- `js/` for scripts
+- `index.html` at the top level: the portal homepage
+- `css/style.css`: shared styles and the light/dark theme colors
+- `js/theme.js`: shared theme toggle
+- `tools/<tool-name>/index.html`: one folder per tool (currently the placeholder `tools/tool-1/`)
 
 Update this section when the layout changes.
 
@@ -28,6 +28,8 @@ A web portal where students try out small web tools. The subject area is still o
 
 **Phases**
 1. **Portal + first tool:** the homepage, the theme toggle, and exactly one tool. What the tool does is still to be decided.
+   - [x] Portal built: homepage, theme toggle, and a placeholder card "Tool 1 — coming soon" that opens `tools/tool-1/` and goes back.
+   - [ ] Build the real first tool.
 2. **More tools:** add tools one at a time, using the steps above.
 3. **Polish:** only if needed, such as search or grouping tools by topic.
 

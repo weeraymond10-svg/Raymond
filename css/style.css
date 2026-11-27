@@ -1,0 +1,86 @@
+/* Colors live in variables so both themes stay readable. */
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #4a4a4a;
+  --border: #c8c8c8;
+  --card-bg: #f4f4f4;
+  --link: #0b4fb3;
+}
+
+:root[data-theme="dark"] {
+  --bg: #161616;
+  --text: #f0f0f0;
+  --muted: #bdbdbd;
+  --border: #4a4a4a;
+  --card-bg: #232323;
+  --link: #8ab8ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+a { color: var(--link); }
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-title { margin: 0; font-size: 1.25rem; }
+
+.theme-toggle {
+  font: inherit;
+  color: var(--text);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.intro { color: var(--muted); }
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.tool-card {
+  display: block;
+  height: 100%;
+  padding: 1rem;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.tool-card:hover,
+.tool-card:focus-visible { border-color: var(--link); }
+
+.tool-card h2 { margin: 0 0 0.25rem; font-size: 1.1rem; }
+.tool-card p { margin: 0; color: var(--muted); }
+
+.back-link { display: inline-block; margin-bottom: 1rem; }

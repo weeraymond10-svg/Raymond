@@ -8,7 +8,7 @@
 - `index.html` at the top level: the portal homepage
 - `css/style.css`: shared styles and the light/dark theme colors
 - `js/theme.js`: shared theme toggle
-- `tools/<tool-name>/index.html`: one folder per tool (currently the placeholder `tools/tool-1/`)
+- `tools/<tool-name>/index.html`: one folder per tool (currently `tools/unit-converter/`, with its own `converter.js`)
 
 Update this section when the layout changes.
 
@@ -27,9 +27,9 @@ A web portal where students try out small web tools. The subject area is still o
 - **Adding a tool later:** create a folder `tools/<tool-name>/` with its own page, then add one card to the homepage. Nothing else changes.
 
 **Phases**
-1. **Portal + first tool:** the homepage, the theme toggle, and exactly one tool. What the tool does is still to be decided.
-   - [x] Portal built: homepage, theme toggle, and a placeholder card "Tool 1 — coming soon" that opens `tools/tool-1/` and goes back.
-   - [ ] Build the real first tool.
+1. **Portal + first tool:** the homepage, the theme toggle, and exactly one tool. The first tool is a unit converter.
+   - [x] Portal built: homepage, theme toggle, and navigation to a tool page and back.
+   - [x] First tool built: Unit Converter (`tools/unit-converter/`). Pick a type, enter a value, choose "from" and "to" units. Length (m, ft, mi), temperature (°C, °F, K), mass (kg, lb).
 2. **More tools:** add tools one at a time, using the steps above.
 3. **Polish:** only if needed, such as search or grouping tools by topic.
 

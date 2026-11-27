@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/theme.js"></script>
+  <script src="converter.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Student Tools Portal</h1>
+    <button id="theme-toggle" class="theme-toggle" type="button">Switch to dark theme</button>
+  </header>
+
+  <main>
+    <a class="back-link" href="../../index.html">&larr; Back to all tools</a>
+    <h2>Unit Converter</h2>
+    <p class="intro">Pick a type of unit, enter a number, then choose the units to convert from and to.</p>
+
+    <form id="converter" class="tool-form" novalidate>
+      <label for="category">Type</label>
+      <select id="category">
+        <option value="length">Length</option>
+        <option value="temperature">Temperature</option>
+        <option value="mass">Mass</option>
+      </select>
+
+      <label for="value">Value</label>
+      <input id="value" type="number" step="any" inputmode="decimal" value="1">
+
+      <label for="from">From</label>
+      <select id="from"></select>
+
+      <label for="to">To</label>
+      <select id="to"></select>
+    </form>
+
+    <p id="result" class="result" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>

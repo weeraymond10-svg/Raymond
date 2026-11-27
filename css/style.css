@@ -84,3 +84,33 @@ main {
 .tool-card p { margin: 0; color: var(--muted); }
 
 .back-link { display: inline-block; margin-bottom: 1rem; }
+
+/* Tool forms */
+.tool-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+  max-width: 24rem;
+}
+
+.tool-form label { margin-top: 0.75rem; font-weight: 600; }
+
+.tool-form select,
+.tool-form input {
+  font: inherit;
+  color: var(--text);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  font-size: 1.15rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
